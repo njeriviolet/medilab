@@ -1,7 +1,7 @@
 {% extends 'starter-page.html' %}
 {% load static %}
 {% block body %}
-    <table class="table">
+    <table class="table" class="table-success">
     <tr>
         <th>Name</th>
         <th>Email</th>
@@ -22,8 +22,8 @@
     <td>{{ y.department }}</td>
     <td>{{ y.doctor }}</td>
     <td>{{ y.message }}</td>
-    <td><a href="" class=" btn btn-warning">EDIT</a></td>
-    <td><a href="/Delete/{{ y.id }}" class=" btn btn-danger">DELETE</a></td>
+    <td><a href="/edit/{{ y.id }}" class=" btn btn-warning">EDIT</a></td>
+    <td><a href="/delete/{{ y.id }}" class=" btn btn-danger">DELETE</a></td>
     </tr>
     {% endfor %}
     
